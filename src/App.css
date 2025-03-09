@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+.title {
+  font-family: "Instrument Serif", serif;
+  font-weight: bold;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.bg-sidebar-overlay {
+  background: rgba(255,255,255,0.75);
+}
+
+.color-primary {
+  color: #89AC46
+}
+
+.color-secondary {
+  color: #FF8989
+}
+
+.bg-color-primary {
+  background: #89AC46;
+}
+
+.bg-color-light {
+  background: #D3E671;
+}
+
+.bg-color-secondary {
+  background: #FF8989;
+}
+
+.border-color-secondary {
+  border-color: #FF8989;
+}
