@@ -6,6 +6,7 @@ import MenuItem from "../../types/MenuItem";
 
 interface BestSellingContainerProps {
   dataMenus: MenuItem[];
+  scrollToMenu: () => void;
 }
 
 const BestSellingContainer = (props: BestSellingContainerProps) => {
@@ -18,11 +19,15 @@ const BestSellingContainer = (props: BestSellingContainerProps) => {
 
   return (
     <div className="bg-gray-100">
-      <div className="container mx-auto py-24">
+      <div className="container mx-auto py-24 px-4 md:px-0">
         <div className="flex justify-between pb-8">
           <h5 className="text-xl text-stone-700">Our Best-Selling Dishes</h5>
           <div className="text-end">
-            <button type="button" className="text-xl px-2 color-secondary">
+            <button
+              onClick={props.scrollToMenu}
+              type="button"
+              className="cursor-pointer text-xl px-2 color-secondary text-end"
+            >
               See All Menu
             </button>
           </div>

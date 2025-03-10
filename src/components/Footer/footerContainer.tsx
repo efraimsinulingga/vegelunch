@@ -11,8 +11,8 @@ interface FooterContainerProps {
 const FooterContainer = (props: FooterContainerProps) => {
   return (
     <div className="bg-color-light mt-60">
-      <div className="container mx-auto relative">
-        <div className="absolute w-full h-120 -top-60">
+      <div className="container mx-auto relative px-4 md:px-0">
+        <div className="absolute w-full h-120 -top-60 left-0">
           <img
             src="./bg-restaurant.jpg"
             className="w-full h-full object-cover rounded-lg shadow-xl"
@@ -20,7 +20,7 @@ const FooterContainer = (props: FooterContainerProps) => {
         </div>
         <div className="py-36"></div>
         <FooterCopy></FooterCopy>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-8 pt-10 pb-8">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 pt-10 pb-8">
           {props.dataRecipes.map((item) => {
             return (
               <Recipe

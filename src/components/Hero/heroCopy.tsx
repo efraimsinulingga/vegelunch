@@ -8,7 +8,7 @@ interface HeroCopyProps {
 const HeroCopy = (props: HeroCopyProps) => {
   return (
     <>
-      <div className="container mx-auto">
+      <div className="container mx-auto px-4 md:px-0">
         <div className="pt-16">
           <motion.div
             initial={{ opacity: 0, scale: 0 }}
@@ -18,14 +18,22 @@ const HeroCopy = (props: HeroCopyProps) => {
               scale: { type: "spring", visualDuration: 0.4, bounce: 0.5 },
             }}
           >
-            <h1 className="title text-7xl color-primary leading-normal">
+            <h1 className="title text-7xl color-primary leading-thight md:leading-normal">
               Taste the Freshness of Vegan Delights
             </h1>
           </motion.div>
-          <p className="text-3xl w-full md:w-3/5 mt-8 text-stone-400 leading-normal">
+          <motion.p
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{
+              duration: 0.4,
+              scale: { type: "spring", visualDuration: 0.4, bounce: 0.5 },
+            }}
+            className="text-3xl w-full md:w-3/5 mt-8 text-stone-400 leading-thight md:leading-normal"
+          >
             From farm to table – Discover the true flavors of plant-based
             cuisine that nourish your body and soul.
-          </p>
+          </motion.p>
           <button
             onClick={props.scrollToMenu}
             type="button"

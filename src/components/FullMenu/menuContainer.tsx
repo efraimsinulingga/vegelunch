@@ -30,9 +30,9 @@ const MenuContainer = (props: MenuContainerProps) => {
   }, [menuItem]);
 
   return (
-    <div className="container mx-auto py-24">
+    <div className="container mx-auto py-24 px-4 md:px-0">
       <div className="flex justify-between">
-        <h5 className="text-xl text-stone-700">Full Menu</h5>
+        <h5 className="text-xl text-stone-700 hidden md:block">Full Menu</h5>
         <div className="text-end">
           <button
             onClick={() => props.handleChangeCategory("Best")}
@@ -72,7 +72,7 @@ const MenuContainer = (props: MenuContainerProps) => {
           </button>
         </div>
       </div>
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-8 pt-10 pb-8">
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 pt-10 pb-8">
         {props.dataMenus.map((item) => {
           return (
             <Menu

@@ -8,7 +8,7 @@ interface MainHeaderProps {
 const MainHeader = (props: MainHeaderProps) => {
   return (
     <div className="w-full pt-8 pb-10">
-      <div className="container mx-auto">
+      <div className="container mx-auto px-4 md:px-0">
         <div className="flex justify-between">
           <img src="./logo.png" className="w-full md:w-[540px]" alt="Logo" />
 

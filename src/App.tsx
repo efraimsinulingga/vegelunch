@@ -143,7 +143,7 @@ function App() {
   }, []);
 
   return (
-    <>
+    <div className="overflow-x-hidden">
       <TopLoader isActive={isLoading}></TopLoader>
       <div className="h-screen">
         <MainHeader
@@ -156,7 +156,10 @@ function App() {
       </div>
       <section ref={aboutRef}></section>
       <StoryCopy></StoryCopy>
-      <BestSellingContainer dataMenus={menusBestFilter}></BestSellingContainer>
+      <BestSellingContainer
+        dataMenus={menusBestFilter}
+        scrollToMenu={scrollToMenu}
+      ></BestSellingContainer>
       <section ref={menuRef}></section>
       <MenuContainer
         dataMenus={menusFilter}
@@ -190,7 +193,7 @@ function App() {
           BOOKING
         </button>
       )}
-    </>
+    </div>
   );
 }
 
