@@ -145,7 +145,7 @@ function App() {
   return (
     <div className="overflow-x-hidden">
       <TopLoader isActive={isLoading}></TopLoader>
-      <div className="h-screen">
+      <div className="h-screen flex flex-col">
         <MainHeader
           scrollToAbout={scrollToAbout}
           scrollToMenu={scrollToMenu}

@@ -8,8 +8,8 @@ interface HeroCopyProps {
 const HeroCopy = (props: HeroCopyProps) => {
   return (
     <>
-      <div className="container mx-auto px-4 md:px-0">
-        <div className="pt-16">
+      <div className="container mx-auto px-4 flex-1 flex flex-col justify-center items-center md:items-start">
+        <div className="flex flex-col items-center md:items-start">
           <motion.div
             initial={{ opacity: 0, scale: 0 }}
             animate={{ opacity: 1, scale: 1 }}
