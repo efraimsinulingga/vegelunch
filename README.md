@@ -1,23 +1,23 @@
 # Vegelunch
 
-Aplikasi web profile Restoran Vegan dan fitur booking menu makanan dan reservasi
+A vegan restaurant profile web application featuring food menu booking and table reservations.
 
-Penggunaan data API dari: https://www.themealdb.com/api/json/v1/1/
+Uses API data from: https://www.themealdb.com/api/json/v1/1/
 
-## Demo
+## Rapid Prototyping Demo
+Figma Design: https://www.figma.com/design/TvFOjqIMAWiKLoL50d4VBr/Vegelunch
+Web Design: https://vegelunch.vercel.app/
 
-https://vegelunch.emdastra.com
+## Specifications
 
-## Spesifikasi
-
-- React versi 19
-- Styling Tailwind CSS
-- Data fetching, dengan javascript fetch
-- Penerapan Redux pada booking menu
+- React version 19
+- Styling with Tailwind CSS
+- Data fetching using native JavaScript fetch API
+- Redux implementation for menu booking
 
 ## Deployment
 
-Running aplikasi di local, masuk ko folder project terminal
+To run the application locally, navigate to the project folder in your terminal and run:
 
 ```bash
   npm install
