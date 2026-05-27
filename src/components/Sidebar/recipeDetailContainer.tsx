@@ -16,9 +16,8 @@ const RecipeDetailContainer = (props: RecipeDetailContainerProps) => {
       ></Wrapper>
       <div
         id="sidebar"
-        className={`overflow-y-scroll origin-right w-96 h-full fixed top-0 right-0 bg-white shadow z-30 bg-body transition-all ease-out duration-300 ${
-          !props.isOpen ? "translate-x-full" : "translate-x-0"
-        }`}
+        className={`overflow-y-scroll origin-right w-96 h-full fixed top-0 right-0 bg-white shadow z-30 bg-body transition-all ease-out duration-300 ${!props.isOpen ? "translate-x-full" : "translate-x-0"
+          }`}
       >
         <div className="p-8">
           <div
@@ -36,7 +35,7 @@ const RecipeDetailContainer = (props: RecipeDetailContainerProps) => {
             </svg>
           </div>
 
-          <h1 className="title text-7xl color-primary leading-normal">
+          <h1 className="title text-7xl color-primary leading-thight">
             {props.data?.name}
           </h1>
           <p className="text-sm text-stone-600">

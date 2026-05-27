@@ -18,7 +18,7 @@ const HeroCopy = (props: HeroCopyProps) => {
               scale: { type: "spring", visualDuration: 0.4, bounce: 0.5 },
             }}
           >
-            <h1 className="title text-7xl color-primary leading-thight md:leading-normal">
+            <h1 className="title text-7xl color-primary leading-thight">
               Taste the Freshness of Vegan Delights
             </h1>
           </motion.div>
