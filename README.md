@@ -6,7 +6,8 @@ Uses API data from: https://www.themealdb.com/api/json/v1/1/
 
 ## Rapid Prototyping Demo
 Figma Design: https://www.figma.com/design/TvFOjqIMAWiKLoL50d4VBr/Vegelunch
-Web Design: https://vegelunch.vercel.app/
+
+Live Preview: https://vegelunch.vercel.app/
 
 ## Specifications
 
